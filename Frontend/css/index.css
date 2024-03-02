@@ -31,7 +31,7 @@ body{
 /* Navbar Start */
 header{
   width: 100%;
-    height: vh;
+    
     min-height: 80px;
 
     background: var(--nav);
@@ -202,14 +202,14 @@ a:hover {
 }
 
 
-/* Add this CSS after the existing CSS */
+/* Seperates google button from form elements */
 
 .separator {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .separator-line {
@@ -225,7 +225,7 @@ a:hover {
 
 .google-login-container {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .google-login {
