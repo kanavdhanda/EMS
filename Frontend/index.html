@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
+    <!--Nav Bar Start-->
     <header>
         <div class="nleft">
           <a href="#"><img class="logo" src="images/logo.png" alt="logo"></a>
@@ -23,7 +24,7 @@
             </ul>  
         </nav>
     </header>
-
+    <!--Nav Bar Start-->
 
     <!--Login Form Start-->
 
@@ -32,7 +33,6 @@
       <div class="left">
         <div class="above margin">
           <h2>Login</h2>
-          <hr>
         </div>
         <div class="form margin">
           <h3>Welcome to EMS</h3>
@@ -45,16 +45,33 @@
 
               <input type="password" id="password" name="password" placeholder="Password" required>
             </div>
-            <div class="form-group">
-              <a href="pages/forgot-pass.html">forgot password</a>
+            <div class="pass">
+            <div class="form-group fpass">
+              <a href="pages/forgot-pass.html">Forgot password</a>
             </div>
+            <div class="form-group frem">
+              
+              <input type="checkbox" id="remme" >
+              <label for="rem_me">Remember Me</label>
+            </div>
+          </div>
             <div class="form-group">
               <input type="submit" value="Login">
             </div>
-
+            
+            
           </form>
         </div>
-        <div class="below" id="seperate login"></div></div>
+        <div class="separator">
+          <span class="separator-line"></span>
+          <span class="separator-text">or</span>
+          <span class="separator-line"></span>
+        </div>
+        <div class="google-login-container">
+          <button class="google-login">Login with Google</button>
+        </div>
+
+      </div>
       <div class="right"><img src="./images/login.png" alt="Background image"></div>
     </div>
     </div>
