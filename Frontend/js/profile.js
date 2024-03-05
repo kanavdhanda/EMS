@@ -3,11 +3,13 @@ $(document).ready(function(){
     $('#datetime').text(now);
     
     $('#roomNumber').text('Your Room Number');
-    var currentStatus = 'absent'; 
 
-    
+    // Current Status Start
+    var currentStatus = 'absent'; /* Change current status value here  it will effect all*/
     $('#currentStatus').text(currentStatus);
     $('#currentStatusBox').addClass(currentStatus);
+
+
     $('#reliefTime').on('input', function() {
         $('#output').text($(this).val() + ' mins');
     });
