@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root{
   --body: #01172F;
@@ -13,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    font-family:"Raleway", sans-serif;
+    font-family:"Poppins", sans-serif;
 }
 
 html{
@@ -23,13 +22,12 @@ html{
 
 
 body{
-  background-color: var(--body);
   height: 100vh;
 }
 
 
 /* Navbar Start */
-header{
+/* header{
   width: 100%;
     
     min-height: 80px;
@@ -63,7 +61,7 @@ nav li{
 nav li a{
   text-decoration: none;
   color: black;
-}
+} */
 
 /* Navbar End */
 
@@ -80,14 +78,18 @@ nav li a{
   display: flex;
   justify-content: center; 
   align-items: center; 
-  height: calc(100vh - 80px); 
-  background-color: #ccc;
+  height: 100vh; 
+  background-color: #D3D3D3;
 }
 
 .all{
   display: flex;
   flex-direction: row;
-  
+  background-color: #B0C4DE;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  border-top-left-radius: 24px;
+  border-bottom-right-radius: 24px; /* Add border-radius to round the corners */
+  overflow: hidden;
 }
 /* .left{
   background-color: red;
@@ -107,13 +109,13 @@ nav li a{
 
 .left {
   background-color: #f8f9fa; /* Light gray background */
-  border-top-left-radius:  24px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  /* border-top-left-radius:  24px;  */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
   padding: 20px;
   width: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
   /* align-items: center; */
   height: 500px;
@@ -130,7 +132,8 @@ nav li a{
 }
 
 .form {
-  margin-bottom: 20px; /* Spacing between form and 'forgot password' link */
+  margin-bottom: 10px; 
+  /* Spacing between form and 'forgot password' link */
 }
 
 .form h3{
@@ -146,12 +149,20 @@ nav li a{
   justify-content: space-between;
   margin: 10px;
   padding-left: 10px;
+  padding-right: 10px;
   font-size: 0.75rem;
+  height: 18px;
 }
-.frem{
+/* .frem{
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+.rem_me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 input[type="text"],
 input[type="password"] {
@@ -160,6 +171,37 @@ input[type="password"] {
   border: 1px solid #ddd; /* Light border */
   border-radius: 5px; /* Rounded corners */
 }
+
+
+
+  /* Password Error shake animation */
+
+  /* input[type="password"] {
+  animation-name: shake, glow-red;
+  animation-duration: 0.7s, 0.35s;
+  animation-iteration-count: 1, 2;
+  } */
+/* @keyframes shake {
+  0%, 20%, 40%, 60%, 80% {
+    transform: translateX(8px);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-8px);
+  }
+}
+
+@keyframes glow-red {
+  50% {
+    border-color: indianred;
+  }
+} */
+
+
+
 
 input[type="submit"] {
   width: calc(100% - 40px); /* Button width with padding */
@@ -171,9 +213,9 @@ input[type="submit"] {
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth hover effect */
 }
-.form-group .google {
-  background-color: rgba(197, 48, 48, 0.781); /* Spacing between form inputs */
-}
+/* .form-group .google {
+  background-color: rgba(197, 48, 48, 0.781); 
+} */
 input[type="submit"]:hover {
   background-color: #0056b3; /* Darker blue on hover */
 }
@@ -189,17 +231,23 @@ a:hover {
   text-decoration: underline; /* Underline on hover */
 }
 
-.right {
-  height: 500px;
-  width: 283px;
-  border-bottom-right-radius: 24px;
+
+/* Error Messages Start */
+.error{
+  font-size: 0.75rem;
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: solid 2px;
+  /* width: 100%; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
-.right img {
-  max-width: 100%;
-  height: 500px;
-  border-bottom-right-radius: 24px;
-}
+/* Error Messages Ends */
+
+
 
 
 /* Seperates google button from form elements */
@@ -224,20 +272,57 @@ a:hover {
 }
 
 .google-login-container {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
   margin-top: 10px;
+  /* margin-bottom: 20px; */
 }
 
 .google-login {
+  width: calc(100% - 40px); /* Button width with padding */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 20px;
-  background-color: #dd4b39;
+  background-color: #c53727;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 0.75rem;
+}
+.google-login img{
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
 
 .google-login:hover {
-  background-color: #c53727;
+  transition: all ease 0.3s;
+  background-color: #4f69b1;
 }
+
+
+
+/* Right part of the login page Start */
+
+ 
+.right {
+  height: 500px;
+  width: 283px;
+  border-bottom-right-radius: 24px;
+}
+
+.right img {
+  max-width: 100%;
+  height: 500px;
+  border-bottom-right-radius: 24px;
+}
+
+/* Right part of the login page End */
+
+
+
+
