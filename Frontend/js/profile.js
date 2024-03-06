@@ -18,3 +18,9 @@ $(document).ready(function(){
 
 // document.getElementById("reliefTime").stepUp(10);
 //trying to make it so that the slider increases with increments of 10
+
+
+
+
+//written in jquery
+

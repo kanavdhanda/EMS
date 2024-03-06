@@ -23,6 +23,8 @@ html{
 
 body{
   height: 100vh;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Shadow effect for all text */
+
 }
 
 
@@ -79,17 +81,21 @@ nav li a{
   justify-content: center; 
   align-items: center; 
   height: 100vh; 
-  background-color: #D3D3D3;
+  /* background-color: #D3D3D3; */
+  /* background-image: linear-gradient(90deg, rgb(90, 35, 81),rgb(207, 104, 69)); */
+  background-image: linear-gradient(148deg, rgba(15, 15, 15,0.04) 0%, rgba(15, 15, 15,0.04) 35%,rgba(113, 113, 113,0.04) 35%, rgba(113, 113, 113,0.04) 42%,rgba(210, 210, 210,0.04) 42%, rgba(210, 210, 210,0.04) 100%),linear-gradient(70deg, rgba(15, 15, 15,0.04) 0%, rgba(15, 15, 15,0.04) 25%,rgba(113, 113, 113,0.04) 25%, rgba(113, 113, 113,0.04) 30%,rgba(210, 210, 210,0.04) 30%, rgba(210, 210, 210,0.04) 100%),linear-gradient(65deg, rgba(15, 15, 15,0.04) 0%, rgba(15, 15, 15,0.04) 13%,rgba(113, 113, 113,0.04) 13%, rgba(113, 113, 113,0.04) 27%,rgba(210, 210, 210,0.04) 27%, rgba(210, 210, 210,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+  /* background-image: radial-gradient(circle at 16% 83%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(63, 63, 63,0.06) 50%, rgba(63, 63, 63,0.06) 100%),radial-gradient(circle at 68% 87%, rgba(66, 66, 66,0.06) 0%, rgba(66, 66, 66,0.06) 50%,rgba(105, 105, 105,0.06) 50%, rgba(105, 105, 105,0.06) 100%),radial-gradient(circle at 38% 50%, rgba(123, 123, 123,0.06) 0%, rgba(123, 123, 123,0.06) 50%,rgba(172, 172, 172,0.06) 50%, rgba(172, 172, 172,0.06) 100%),linear-gradient(90deg, hsl(18,0%,1%),hsl(18,0%,1%)); */
 }
 
 .all{
   display: flex;
   flex-direction: row;
   background-color: #B0C4DE;
-  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  /* box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1); Shadow effect */
   border-top-left-radius: 24px;
   border-bottom-right-radius: 24px; /* Add border-radius to round the corners */
   overflow: hidden;
+  width: 750px;
 }
 /* .left{
   background-color: red;
@@ -170,6 +176,8 @@ input[type="password"] {
   padding: 10px;
   border: 1px solid #ddd; /* Light border */
   border-radius: 5px; /* Rounded corners */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+
 }
 
 
