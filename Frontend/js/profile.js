@@ -1,14 +1,17 @@
 $(document).ready(function(){
-    var now = new Date();
-    $('#datetime').text(now);
-    
+    setInterval(()=>{
+        var now = new Date().toLocaleTimeString();
+        $('#datetime').text(now);
+    }
+    , 10);
+     
     $('#roomNumber').text('Your Room Number');
 
     // Current Status Start
     var currentStatus = 'absent'; /* Change current status value here  it will effect all*/
     $('#currentStatus').text(currentStatus);
     $('#currentStatusBox').addClass(currentStatus);
-
+     
 
     $('#reliefTime').on('input', function() {
         $('#output').text($(this).val() + ' mins');
