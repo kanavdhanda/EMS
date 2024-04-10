@@ -1,10 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root{
   --body: #01172F;
   --nav: beige;
   --box: white;
+  
   --font: black;
 }
 
@@ -21,12 +21,17 @@ html{
 
 
 
+
+
 body{
   height: 100vh;
-  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 
 }
 
+
+
+/* Navbar End */
 
 /* Navbar Start */
 /* header{
@@ -95,12 +100,12 @@ nav li a{
   border-top-left-radius: 24px;
   border-bottom-right-radius: 24px; /* Add border-radius to round the corners */
   overflow: hidden;
-  width: 750px;
+  min-width: 500px;
+  height: auto;
 }
 
 
 .left {
-  background-color: rgba(100, 192, 100, 0.695); 
 
   padding: 20px;
   width: 500px;
@@ -133,6 +138,7 @@ nav li a{
 
 .form-group {
   margin-bottom: 15px; /* Spacing between form inputs */
+  border: none;
 }
 .form .pass{
   display: flex;
@@ -153,13 +159,29 @@ nav li a{
 }
 input[type="text"],
 input[type="password"] {
+  color: black;
+  background-color: inherit;
   width: calc(100% - 40px); /* Input width with padding */
   padding: 10px;
-  border: 1px solid #ddd; /* Light border */
-  border-radius: 5px; /* Rounded corners */
+  /* border: 1px solid #ddd;  */
+  /* border-radius: 5px; */
+  border : none;
+  border-bottom: 1px solid #ddd
   /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); */
 }
 
+input[type="text"]:active,
+input[type="password"]:active {
+  color: black;
+  background-color: inherit;
+  width: calc(100% - 40px); /* Input width with padding */
+  padding: 10px;
+  /* border: 1px solid #ddd;  */
+  /* border-radius: 5px; */
+  border : none;
+  border-bottom: 1px solid #ddd
+  /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); */
+}
 
   /* Password Error shake animation */
 
